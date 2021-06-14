@@ -15,5 +15,4 @@ product.price > '25' ? console.log("You're shipping is free!") : shipping = 5;
 shippingAddress.match("New York") ? taxPercent = .1 : taxPercent = .05;
 taxTotal = Number(product.price) * taxPercent;
 total = taxTotal + Number(product.price) + shipping;
-console.log(taxTotal.toFixed);
 console.log("\nProduct:  " + product.name + "\nAddress:  " + shippingAddress + "\nPrice:    $" + product.price + "\nTax:      $" + taxTotal.toFixed(2) + "\nShipping: $" + shipping.toFixed(2) + "\nTotal:    $" + total.toFixed(2) + "\n");
